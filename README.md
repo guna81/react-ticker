@@ -1,1 +1,1 @@
-# react-ticker
+# A Simple React Ticker Component
