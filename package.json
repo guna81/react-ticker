@@ -1,0 +1,18 @@
+{
+  "name": "@guna81/react-ticker",
+  "version": "1.0.0",
+  "description": "a simple react ticker component",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "npm",
+    "package",
+    "ticker"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guna",
+  "license": "MIT",
+  "repository": "@guna81/react-ticker"
+}
