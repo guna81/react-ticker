@@ -1,1 +1,1 @@
-# A Simple React Ticker Component
+# A Simple React Ticker Component | News Ticker
