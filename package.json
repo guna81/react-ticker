@@ -1,6 +1,6 @@
 {
   "name": "@guna81/react-ticker",
-  "version": "2.2.5",
+  "version": "2.2.8",
   "scripts": {
     "build": "rollup -c -o dist/index.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
     "type": "git",
     "url": "https://github.com/guna81/react-ticker.git"
   },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
