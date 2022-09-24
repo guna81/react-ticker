@@ -1,0 +1,39 @@
+.newsTicker {
+    margin: 0px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.tickerContent {
+    display: flex;
+    transform: translateX(100vw);
+    animation: slide 60s linear infinite;
+    /* animation-delay: 10s; */
+}
+
+.newsTicker:hover .tickerContent {
+    animation-play-state: paused;
+}
+
+.tickerItem {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.tickerText {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
