@@ -44,7 +44,7 @@ function App() {
 | :-------- | :------- | :------------------------- |
 | `data` | `array` | **Required**. list of *objects* or *strings* |
 | `component` | `react node` | custom ticker item component |
-| `keyName` | `string` | unique key for of react component |
+| `keyName` | `string` | unique key of react component |
 | `speed` | `number` | sliding speed  |
 | `delay` | `number` | slide starting delay |
 | `diretion` | `string` | slide direction |

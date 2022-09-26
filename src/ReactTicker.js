@@ -37,7 +37,7 @@ function ReactTicker(props) {
                         data.map((item, index) => {
                             return (
                                 <div
-                                    key={keyName ? data[keyName] : index}
+                                    key={keyName ? item[keyName] : index}
                                     className={[styles.tickerItem, itemClassName].join(" ")}
                                     style={itemStyle}
                                 >
@@ -46,10 +46,10 @@ function ReactTicker(props) {
                             )
                         })
                         :
-                        data.map((item) => {
+                        data.map((item, index) => {
                             return (
                                 <div
-                                    key={item}
+                                    key={'ticker-item-' + index}
                                     style={itemStyle}
                                     className={[styles.tickerItem, itemClassName].join(" ")}
                                 >
