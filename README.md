@@ -42,18 +42,18 @@ function App() {
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `data` | `array` | **Required**. list of *objects* or *strings* |
-| `component` | `react node` | custom ticker item component |
-| `keyName` | `string` | unique key of react component |
-| `speed` | `number` | sliding speed  |
-| `delay` | `number` | slide starting delay |
-| `diretion` | `string` | slide direction |
-| `tickerClassName` | `string` |ticker container class name |
-| `itemClassName` | `string` | ticker item class name |
-| `tickerTextClassName` | `string` | ticker text class name (only if data is list of strings) |
-| `tickerStyle` | `object` | ticker container style |
-| `itemStyle` | `object` | ticker item styles |
+| `data` | `array` | **Required**. List of *objects* or *strings* |
+| `component` | `react node` | Custom ticker item component |
+| `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). |
+| `speed` | `number` | scroll speed. |
+| `delay` | `number` | scroll delay. |
+| `diretion` | `string` | scroll direction. |
+| `tickerClassName` | `string` |ticker container class name. |
+| `itemClassName` | `string` | ticker item class name. |
+| `tickerTextClassName` | `string` | ticker text class name (Required, if only the data is a list of strings). |
+| `tickerStyle` | `object` | ticker container style. |
+| `itemStyle` | `object` | ticker item styles. |
 
 
-- Componet and keyName props are required if data is given as list of objects.
-- If data is given as list of strings component and keyName props are invalid
+- Component and keyName props are required if data is a list of objects.
+- If data is a list of strings, components, and keyName props are unnecessary.

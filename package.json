@@ -10,7 +10,8 @@
   "keywords": [
     "react-ticker",
     "news-ticker",
-    "news-slider"
+    "news-slider",
+    "news-scroller"
   ],
   "main": "dist/index.min.js",
   "repository": {

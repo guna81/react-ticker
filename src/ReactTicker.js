@@ -27,7 +27,7 @@ function ReactTicker(props) {
             <div
                 className={styles.tickerContent}
                 style={{
-                    animationDuration: `${data.length * (speed)}s`,
+                    animationDuration: `${data.length * (61 - speed)}s`,
                     animationDelay: `${delay}s`,
                     animationDirection: diretion,
                 }}
@@ -68,7 +68,7 @@ ReactTicker.defaultProps = {
     data: [],
     component: null,
     keyName: null,
-    speed: 16,
+    speed: 24,
     delay: 0,
     direction: "normal",
     tickerClassName: "",
