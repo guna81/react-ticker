@@ -1,6 +1,6 @@
 {
   "name": "@guna81/react-ticker",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "scripts": {
     "build": "rollup -c -o dist/index.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
