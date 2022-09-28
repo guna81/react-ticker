@@ -15,7 +15,7 @@ Install with npm
 
 ## Demo
 
-Checkout the [Demo](https://duckduckgo.com).
+Checkout the [Demo](https://codesandbox.io/s/react-new-ticker-9g6ndd?file=/src/App.js){:target="_blank"}.
 
 
 ## Usage/Examples
@@ -51,14 +51,14 @@ function App() {
 | `data` | `array` | **Required**. List of *objects* or *strings*. |
 | `component` | `react node` | Custom ticker item component. |
 | `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). |
-| `speed` | `number` | scroll speed. |
-| `delay` | `number` | scroll delay. |
-| `diretion` | `string` | scroll direction. |
-| `tickerClassName` | `string` |ticker container class name. |
-| `itemClassName` | `string` | ticker item class name. |
-| `tickerTextClassName` | `string` | ticker text class name (Required, if only the data is a list of strings). |
-| `tickerStyle` | `object` | ticker container style. |
-| `itemStyle` | `object` | ticker item styles. |
+| `speed` | `number` | Scroll speed. |
+| `delay` | `number` | Scroll delay. |
+| `diretion` | `string` | Scroll direction. |
+| `tickerClassName` | `string` | Ticker container class name. |
+| `itemClassName` | `string` | Ticker item class name. |
+| `tickerTextClassName` | `string` | Ticker text class name (Required, if only the data is a list of strings). |
+| `tickerStyle` | `object` | Ticker container style. |
+| `itemStyle` | `object` | Ticker item styles. |
 
 
 - Component and keyName props are required if data is a list of objects.
