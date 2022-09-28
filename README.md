@@ -15,7 +15,7 @@ Install with npm
 
 ## Demo
 
-Checkout the [Demo](https://codesandbox.io/s/react-new-ticker-9g6ndd?file=/src/App.js){:target="_blank"}.
+Checkout the <a href="https://codesandbox.io/s/react-new-ticker-9g6ndd?file=/src/App.js" target="_blank">Demo</a>
 
 
 ## Usage/Examples
