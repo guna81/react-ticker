@@ -1,7 +1,7 @@
 
 # React Ticker
 
-A simple and flexible react ticker (news slider) component.
+A simple and customizable react ricker (news scroller) component.
 
 
 ## Installation
@@ -11,7 +11,13 @@ Install with npm
 ```bash
   npm install @guna81/react-ticker
 ```
-    
+
+
+## Demo
+
+Checkout the [Demo](https://duckduckgo.com).
+
+
 ## Usage/Examples
 
 ```javascript
@@ -42,8 +48,8 @@ function App() {
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `data` | `array` | **Required**. List of *objects* or *strings* |
-| `component` | `react node` | Custom ticker item component |
+| `data` | `array` | **Required**. List of *objects* or *strings*. |
+| `component` | `react node` | Custom ticker item component. |
 | `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). |
 | `speed` | `number` | scroll speed. |
 | `delay` | `number` | scroll delay. |
