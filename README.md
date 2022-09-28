@@ -94,7 +94,7 @@ export default function App() {
 | `data` | `array` | **Required**. List of *objects* or *strings*. |
 | `component` | `react node` | Custom ticker item component. |
 | `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). |
-| `speed` | `number` | Scroll speed. |
+| `speed` | `number` | Scroll speed (0 - 60).  |
 | `delay` | `number` | Scroll delay. |
 | `diretion` | `string` | Scroll direction. |
 | `tickerClassName` | `string` | Ticker container class name. |
