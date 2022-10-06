@@ -89,20 +89,20 @@ export default function App() {
 
 #### Props
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `data` | `array` | **Required**. List of *objects* or *strings*. |
-| `component` | `react node` | Custom ticker item component. |
-| `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). |
-| `speed` | `number` | Scroll speed (0 - 60).  |
-| `delay` | `number` | Scroll delay. |
-| `diretion` | `string` | Scroll direction. |
-| `tickerClassName` | `string` | Ticker container class name. |
-| `itemClassName` | `string` | Ticker item class name. |
-| `tickerTextClassName` | `string` | Ticker text class name (Required, if only the data is a list of strings). |
-| `tickerStyle` | `object` | Ticker container style. |
-| `itemStyle` | `object` | Ticker item styles. |
-| `loop` | `boolean` | Infinite scroll. |
+| Parameter | Type     | Description                | Default Value |
+| :-------- | :------- | :------------------------- | :------------ |
+| `data` | `array` | **Required**. List of *objects* or *strings*. | empty array |
+| `component` | `react node` | Custom ticker item component. | null |
+| `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). | null |
+| `speed` | `number` | Scroll speed (0 - 60).  | 24 |
+| `delay` | `number` | Scroll delay. | 0 |
+| `diretion` | `string` | Scroll direction. | normal |
+| `tickerClassName` | `string` | Ticker container class name. | empty string |
+| `itemClassName` | `string` | Ticker item class name. | empty string |
+| `tickerTextClassName` | `string` | Ticker text class name (Required, if only the data is a list of strings). | empty string |
+| `tickerStyle` | `object` | Ticker container style. | empty object |
+| `itemStyle` | `object` | Ticker item styles. | empty object |
+| `loop` | `boolean` | Infinite scroll. | true |
 
 
 - Component and keyName props are required if data is a list of objects.
