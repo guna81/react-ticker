@@ -89,8 +89,8 @@ export default function App() {
 
 #### Props
 
-| Parameter | Type     | Description                | Default Value |
-| :-------- | :------- | :------------------------- | :------------ |
+| Parameter | Type     | Description                | Default Value     |
+| :-------- | :------- | :------------------------- | :---------------- |
 | `data` | `array` | **Required**. List of *objects* or *strings*. | empty array |
 | `component` | `react node` | Custom ticker item component. | null |
 | `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). | null |
