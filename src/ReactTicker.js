@@ -19,7 +19,6 @@ function ReactTicker(props) {
         loop,
     } = props;
 
-
     return (
         <div
             className={[styles.newsTicker, tickerClassName].join(" ")}
@@ -70,7 +69,7 @@ ReactTicker.defaultProps = {
     data: [],
     component: null,
     keyName: null,
-    speed: 24,
+    speed: 30,
     delay: 0,
     direction: "normal",
     tickerClassName: "",

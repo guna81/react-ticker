@@ -89,12 +89,12 @@ export default function App() {
 
 #### Props
 
-| Parameter | Type     | Description                | Default Value     |
-| :-------- | :------- | :------------------------- | :---------------- |
+| Parameter | Type     | Description                | Default Value       |
+| :-------- | :------- | :------------------------- | :------------------ |
 | `data` | `array` | **Required**. List of *objects* or *strings*. | empty array |
 | `component` | `react node` | Custom ticker item component. | null |
 | `keyName` | `string` | Key of object (Required, if only the data is a list of objects.). | null |
-| `speed` | `number` | Scroll speed (0 - 60).  | 24 |
+| `speed` | `number` | Scroll speed (0 - 60).  | 30 |
 | `delay` | `number` | Scroll delay. | 0 |
 | `diretion` | `string` | Scroll direction. | normal |
 | `tickerClassName` | `string` | Ticker container class name. | empty string |
