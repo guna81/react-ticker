@@ -15,6 +15,7 @@
 }
 
 .tickerContent {
+    width: fit-content;
     display: flex;
     transform: translateX(100vw);
     animation: slide 60s linear infinite;

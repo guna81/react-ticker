@@ -60,7 +60,7 @@ export default function App() {
         tickerClassName="news-ticker"
       />
       
-      {/* using default ticker item component */}
+      {/* using custom ticker item component */}
       <ReactTicker
         data={data}
         component={renderItem}
@@ -102,6 +102,7 @@ export default function App() {
 | `tickerTextClassName` | `string` | Ticker text class name (Required, if only the data is a list of strings). |
 | `tickerStyle` | `object` | Ticker container style. |
 | `itemStyle` | `object` | Ticker item styles. |
+| `loop` | `boolean` | Infinite scroll. |
 
 
 - Component and keyName props are required if data is a list of objects.

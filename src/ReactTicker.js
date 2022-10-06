@@ -16,6 +16,7 @@ function ReactTicker(props) {
         tickerTextClassName,
         tickerStyle,
         itemStyle,
+        loop,
     } = props;
 
 
@@ -30,6 +31,7 @@ function ReactTicker(props) {
                     animationDuration: `${data.length * (61 - speed)}s`,
                     animationDelay: `${delay}s`,
                     animationDirection: diretion,
+                    animationIterationCount: loop ? "infinite" : 1,
                 }}
             >
                 {
@@ -76,6 +78,7 @@ ReactTicker.defaultProps = {
     tickerTextClassName: "",
     tickerStyle: {},
     itemStyle: {},
+    loop: true,
 }
 
 ReactTicker.propTypes = {
@@ -90,6 +93,7 @@ ReactTicker.propTypes = {
     tickerTextClassName: PropTypes.string,
     tickerStyle: PropTypes.object,
     itemStyle: PropTypes.object,
+    loop: PropTypes.bool,
 }
 
 
