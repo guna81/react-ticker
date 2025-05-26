@@ -1,9 +1,9 @@
 import { uglify } from 'rollup-plugin-uglify'
-import babel from 'rollup-plugin-babel'
+import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 
 const config = {
-    input: 'src/index.js',
+    input: 'src/index.tsx',
     external: ['react'],
     output: {
         format: 'umd',
@@ -13,9 +13,7 @@ const config = {
         }
     },
     plugins: [
-        babel({
-            exclude: "node_modules/**"
-        }),
+        typescript({ useTsconfigDeclarationDir: true }),
         uglify(),
         postcss({
             extensions: ['.css'],

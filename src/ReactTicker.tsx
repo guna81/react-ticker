@@ -1,23 +1,42 @@
 import React from "react";
-import PropTypes from 'prop-types';
 
 import styles from "./ticker.module.css";
 
-function ReactTicker(props) {
+interface ReactTickerProps {
+    data: any[]; // Changed from PropTypes.array.isRequired
+    component?: React.ElementType; // Changed from PropTypes.elementType
+    keyName?: string; // Changed from PropTypes.string
+    speed?: number; // Changed from PropTypes.number
+    delay?: number; // Changed from PropTypes.number
+    direction?: "normal" | "reverse" | "alternate" | "alternate-reverse"; // Changed from PropTypes.oneOf
+    tickerClassName?: string; // Changed from PropTypes.string
+    itemClassName?: string; // Changed from PropTypes.string
+    tickerTextClassName?: string; // Changed from PropTypes.string
+    tickerStyle?: React.CSSProperties; // Changed from PropTypes.object
+    itemStyle?: React.CSSProperties; // Changed from PropTypes.object
+    loop?: boolean; // Changed from PropTypes.bool
+}
+
+const ReactTicker: React.FC<ReactTickerProps> = (props) => {
     const {
-        data,
+        data = [],
         component,
         keyName,
-        speed,
-        delay,
-        diretion,
-        tickerClassName,
-        itemClassName,
-        tickerTextClassName,
-        tickerStyle,
-        itemStyle,
-        loop,
+        speed = 30,
+        delay = 0,
+        direction = "normal",
+        tickerClassName = "",
+        itemClassName = "",
+        tickerTextClassName = "",
+        tickerStyle = {},
+        itemStyle = {},
+        loop = true,
     } = props;
+
+    // Note: 'diretion' prop was used in the original code, but 'direction' is defined in propTypes/interface.
+    // Assuming 'direction' is the correct prop name. If 'diretion' was intentional, the interface and destructuring need to be updated.
+    const animationDirection = direction;
+
 
     return (
         <div
@@ -27,9 +46,9 @@ function ReactTicker(props) {
             <div
                 className={styles.tickerContent}
                 style={{
-                    animationDuration: `${data.length * (61 - speed)}s`,
+                    animationDuration: `${data.length * (61 - (speed || 30))}s`, // Added fallback for speed
                     animationDelay: `${delay}s`,
-                    animationDirection: diretion,
+                    animationDirection: animationDirection, // Use the corrected variable
                     animationIterationCount: loop ? "infinite" : 1,
                 }}
             >
@@ -64,7 +83,6 @@ function ReactTicker(props) {
     );
 }
 
-
 ReactTicker.defaultProps = {
     data: [],
     component: null,
@@ -78,22 +96,7 @@ ReactTicker.defaultProps = {
     tickerStyle: {},
     itemStyle: {},
     loop: true,
-}
-
-ReactTicker.propTypes = {
-    data: PropTypes.array.isRequired,
-    component: PropTypes.elementType,
-    keyName: PropTypes.string,
-    speed: PropTypes.number,
-    delay: PropTypes.number,
-    direction: PropTypes.oneOf(["normal", "reverse", "alternate", "alternate-reverse"]),
-    tickerClassName: PropTypes.string,
-    itemClassName: PropTypes.string,
-    tickerTextClassName: PropTypes.string,
-    tickerStyle: PropTypes.object,
-    itemStyle: PropTypes.object,
-    loop: PropTypes.bool,
-}
+};
 
 
 export default ReactTicker;
