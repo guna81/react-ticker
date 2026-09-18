@@ -1,4 +1,3 @@
-
 # React Ticker
 
 A simple and customizable react ticker (news scroller) component.
@@ -65,7 +64,7 @@ export default function App() {
         data={data}
         component={renderItem}
         speed={40}
-        keyName="_id"
+        keyName="id"
         tickerStyle={{
           position: "fixed",
           bottom: 0,
